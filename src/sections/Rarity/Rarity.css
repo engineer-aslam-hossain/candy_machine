@@ -1,0 +1,75 @@
+section.rarity {
+  padding: 6rem 0;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 229, 123, 0.2),
+      rgba(255, 229, 123, 0.2)
+    ),
+    url(../../assets/images/rateBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-position: center;
+}
+
+.rarity_detail p {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 500;
+  font-family: var(--montseerat);
+  color: white;
+  margin: 3rem 0;
+}
+
+.chart_card {
+  background-color: var(--optional-color);
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.chart_card h2 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-family: var(--montseerat);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.single_trait_card,
+.single_type_card {
+  background-color: var(--primary-color);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 0.8rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.single_trait_card p,
+.single_type_card p {
+  margin-bottom: 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.single_trait_card p:first-child {
+  margin-right: 1.5rem;
+}
+
+@media (min-width: 1200px) {
+  .single_type_card {
+    margin-right: 2rem;
+  }
+  .single_trait_card p,
+  .single_type_card p {
+    font-size: 1.2rem;
+  }
+
+  .single_trait_card p:first-child {
+    margin-right: 4rem;
+  }
+  .rarity_detail p {
+    font-size: 1.3rem;
+  }
+}

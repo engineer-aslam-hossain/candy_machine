@@ -1,0 +1,152 @@
+/* section.headerMain {
+  height: 26rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 4rem;
+  position: relative;
+} */
+
+/* .bannerImg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+} */
+
+.headerMain .container {
+  padding: 0;
+  max-width: 100% !important;
+}
+
+.bannerImg img {
+  width: 100vw;
+}
+
+.presaleCard {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  border: 2px solid white;
+  backdrop-filter: blur(5px);
+}
+
+.presaleCard h4 {
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.countDown {
+  display: flex;
+  align-items: center;
+}
+
+.countDownCard h3 {
+  color: white;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.countDown p {
+  color: var(--primary-color);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.countDownCard {
+  background-color: var(--primary-color);
+  margin: 0.2rem 0.5rem;
+  border-radius: 7px;
+  height: 3.2rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.countDownCard::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: 50%;
+  background-color: white;
+}
+
+@media (min-width: 992px) {
+  /* section.headerMain {
+    height: 35rem !important;
+  } */
+}
+
+@media (min-width: 1200px) {
+  /* section.headerMain {
+    height: 45rem !important;
+    padding-bottom: 5rem;
+  } */
+
+  .countDownCard {
+    height: 6.5rem;
+    width: 6rem;
+    margin: 1rem;
+  }
+  .presaleCard {
+    padding: 2rem 0;
+    backdrop-filter: blur(4px);
+  }
+
+  .presaleCard h4 {
+    font-size: 2rem;
+  }
+
+  .countDownCard h3 {
+    font-size: 3rem;
+  }
+
+  .countDown p {
+    font-size: 1.3rem;
+  }
+
+  .headerMain button.primaryBtn {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* section.headerMain {
+    height: 65rem !important;
+    padding-bottom: 20rem;
+  } */
+}
+
+@media (max-width: 576px) {
+  /* section.headerMain {
+    height: 18rem !important;
+    padding-bottom: 2rem;
+  } */
+
+  .presaleCard h4 {
+    font-size: 14px;
+  }
+  .countDown p {
+    margin-bottom: 0.5rem;
+  }
+  button.primaryBtn {
+    font-size: 12px;
+  }
+
+  .presaleCard {
+    padding: 0.5rem;
+  }
+  /* .bannerImg img {
+    height: 18rem;
+  } */
+}

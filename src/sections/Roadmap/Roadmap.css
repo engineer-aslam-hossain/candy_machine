@@ -1,0 +1,295 @@
+section.timeline {
+  padding: 4rem 0;
+  position: relative;
+}
+
+img.chickenImg {
+  position: absolute;
+  bottom: -5rem;
+  left: 0;
+  width: 14rem;
+  z-index: 10000000000000000000000;
+}
+
+.roadmapTitle.dark h3 {
+  color: white;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 40px 0;
+}
+
+.timeline-container::after {
+  background-color: #bebebe;
+  content: "";
+  position: absolute;
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 90%;
+  top: 2rem;
+  z-index: -1;
+}
+
+.timeline-container.dark::after {
+  background-color: white;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  position: relative;
+  margin: 10px 0;
+  width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.timeline-item-content {
+  background-color: #fffae5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0.5rem 1.5rem;
+  position: relative;
+  width: 500px;
+  max-width: 70%;
+  text-align: right;
+  border-right: 2px solid var(--primary-color);
+}
+
+.timeline-item-content::after {
+  content: "►";
+  position: absolute;
+  right: -12.5px;
+  top: 1rem;
+  width: 15px;
+  height: 15px;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+.timeline-item-content.dark {
+  border-right: 2px solid white;
+}
+.timeline-item-content.dark::after {
+  color: white;
+}
+
+.timeline-item.itemNo1::after {
+  content: "Q4 2021";
+  position: absolute;
+  color: var(--primary-color);
+  font-weight: 700;
+  left: -7rem;
+  top: 0.8rem;
+  font-size: 1.3rem;
+  font-family: var(--montseerat);
+}
+.timeline-item.itemNo1.dark::after {
+  color: white;
+}
+.timeline-item.itemNo2.dark::after {
+  color: white;
+}
+
+.timeline-item.itemNo3.dark::after {
+  color: white;
+}
+
+.timeline-item-content.dark {
+  background-color: #232429;
+}
+
+.timeline-item.itemNo2::after {
+  content: "Q1 2021";
+  position: absolute;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.3rem;
+  right: -7rem;
+  top: 0.8rem;
+}
+
+.timeline-item.itemNo3::after {
+  content: "Q2 2022";
+  position: absolute;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.3rem;
+  left: -7rem;
+  top: 0.8rem;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content {
+  text-align: left;
+  align-items: flex-start;
+  border-left: 2px solid var(--primary-color);
+  border-right: 0;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content.dark {
+  border-left: 2px solid white;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content::after {
+  right: auto;
+  left: -11.5px;
+  transform: rotate(180deg);
+  top: 1.8rem;
+  /* box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2); */
+}
+
+.timeline-item-content h3 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: var(--montseerat);
+  text-transform: uppercase;
+}
+
+.timeline-item-content ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
+.timeline-item:nth-child(even) .timeline-item-content ul {
+  direction: rtl;
+}
+.timeline-item:nth-child(even) .timeline-item-content ul li {
+  text-align: right;
+}
+
+.timeline-item-content ul li {
+  font-size: 12px;
+  font-family: var(--montseerat);
+  text-align: left;
+  font-weight: 500;
+  color: var(--text-color2);
+}
+
+.timeline-item-content.dark ul li {
+  color: white;
+}
+
+.timeline-item-content ul li::marker {
+  font-size: 5px;
+}
+
+.timeline-item-content .circle {
+  position: absolute;
+  top: 0.5rem;
+  right: -52px;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .circle {
+  right: auto;
+  left: -52px;
+}
+
+span.circle.dark img {
+  width: 2rem;
+}
+
+@media (min-width: 1400px) {
+  .timeline-item-content ul li {
+    font-size: 1.1rem;
+  }
+
+  img.chickenImg {
+    left: 0;
+    width: 30rem;
+    bottom: -11rem;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .timeline-item-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-item:nth-child(odd),
+  .timeline-item {
+    align-self: flex-start;
+    width: 100%;
+    padding: 0;
+    margin: 3rem 0;
+    z-index: 100000;
+  }
+
+  .timeline-item:nth-child(odd) {
+    justify-content: flex-end;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-item-content {
+    border-left: 0;
+    border-top: 2px solid var(--primary-color);
+  }
+  .timeline-item:nth-child(odd) .timeline-item-content.dark {
+    border-left: 0;
+    border-top: 2px solid white;
+  }
+  .timeline-item:nth-child(odd) .timeline-item-content::after {
+    left: 43vw;
+    right: 0;
+    top: -0.8rem;
+    transform: rotate(270deg);
+  }
+  .timeline-item-content {
+    border-right: 0;
+    border-top: 2px solid var(--primary-color);
+  }
+  .timeline-item-content.dark {
+    border-right: 0;
+    border-top: 2px solid white;
+  }
+  .timeline-item-content::after {
+    left: 43vw;
+    right: 0;
+    top: -0.8rem;
+    transform: rotate(270deg);
+  }
+
+  .timeline-item.itemNo1::after,
+  .timeline-item.itemNo3::after {
+    left: 4rem;
+    top: -3rem;
+  }
+  .timeline-item.itemNo2::after {
+    right: 4rem;
+    top: -3rem;
+  }
+  .timeline-container::after {
+    top: 0;
+  }
+
+  .timeline-item-content .circle {
+    top: -3.5rem;
+    left: 44.5%;
+    right: 0;
+  }
+  .timeline-item:nth-child(odd) .timeline-item-content .circle {
+    left: 44.5%;
+  }
+
+  .roadmapTitle h3 {
+    font-size: 2rem;
+  }
+  .roadmap_title {
+    padding: 1rem 2rem;
+  }
+}

@@ -1,0 +1,22 @@
+.section_title {
+  background-color: #ffcc00;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  margin-bottom: 1rem;
+}
+
+.section_title h1 {
+  margin-bottom: 0;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: var(--montseerat);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .section_title h1 {
+    font-size: 2.5rem;
+  }
+}

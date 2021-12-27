@@ -1,0 +1,41 @@
+section.solemen {
+  padding: 5rem 0;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 27.6%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url("../../assets/images/solemenbg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-position: right;
+}
+
+.soleman_org a {
+  color: white;
+  font-family: var(--popins);
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  section.solemen {
+    padding: 10rem 0;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 27.6%,
+        rgba(0, 0, 0, 0.3) 100%
+      ),
+      url("../../assets/images/solemenbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+  }
+  .soleman_org a {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+}

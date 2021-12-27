@@ -1,0 +1,72 @@
+section.mint {
+  padding-top: 4rem;
+  padding-bottom: 30rem;
+  background-image: url("../../assets/images/mintbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+.mint_title {
+  background-color: #bb73b2;
+  border-radius: 99px;
+  padding: 1rem 3rem;
+  margin-bottom: 3rem;
+}
+
+.mint_title h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--monteseerat);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.mint_process {
+  padding: 2rem 3rem;
+  background-color: var(--optional-color);
+  border-radius: 40px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-gap: 2.5rem;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.item .count {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.count p {
+  margin-bottom: 0;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.item h4 {
+  margin-bottom: 0;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  .item h4 {
+    font-size: 1.5rem;
+  }
+  .count p {
+    font-size: 1.5rem;
+  }
+}

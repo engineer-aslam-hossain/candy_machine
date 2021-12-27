@@ -1,0 +1,56 @@
+section.about {
+  padding-bottom: 2rem;
+}
+.gradient {
+  background: linear-gradient(
+    180deg,
+    #ffe57b 47.88%,
+    rgba(255, 229, 123, 0) 100%
+  );
+  padding: 2.5rem;
+}
+
+@media (min-width: 992px) {
+  section.about {
+    padding-bottom: 5rem;
+  }
+  .about p {
+    font-size: 1.5rem !important;
+  }
+
+  .about h1 {
+    font-size: 4rem !important;
+  }
+  .about h3 {
+    font-size: 2rem !important;
+  }
+}
+
+.about h3 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--popins);
+  margin-bottom: 2rem;
+}
+
+.about p {
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: var(--popins);
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+button.primaryBtn.about {
+  font-size: 1.2rem !important;
+  padding: 0.8rem 3rem;
+  border: 2px solid #f9e11c !important;
+  background-color: var(--primary-color) !important;
+}
+
+.about p span {
+  border-bottom: 2px solid var(--primary-color);
+}

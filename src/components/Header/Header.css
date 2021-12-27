@@ -1,0 +1,129 @@
+.header {
+  z-index: 100000000000000;
+  transition: all 0.5s ease-in;
+  background-color: #f9cd81;
+  padding: 2rem 0;
+}
+
+.header .container {
+  max-width: 1440px !important;
+}
+/* .header_container {
+  padding: 0 5rem;
+} */
+img.logo.img-fluid {
+  width: 16rem;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+
+.navbar-brand {
+  margin-right: 0;
+}
+.scrolled img.logo.img-fluid {
+  width: 8rem;
+}
+
+.navbar-nav > a {
+  color: black !important;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: var(--popins);
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+.navbar-nav > a:hover {
+  color: var(--primary-color) !important;
+}
+.navbar-nav > a.active:before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 3px;
+  background-color: red;
+  z-index: 10000;
+  bottom: 0rem;
+  left: 30%;
+  transition: all 0.5s ease;
+}
+
+.navbar-nav > a:hover:before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 3px;
+  background-color: red;
+  z-index: 10000;
+  bottom: 0rem;
+  left: 30%;
+  transition: all 0.5s ease;
+}
+
+.justify-content-center.align-items-center.navbar-nav {
+  margin-left: auto;
+}
+
+button.primaryBtn {
+  background-color: var(--primary-color) !important;
+  border: 2px solid #fff9c8 !important;
+  outline: 0;
+  padding: 0.5rem 1.5rem;
+  margin-left: 1rem;
+  border-radius: 6px;
+  color: white !important;
+  font-size: 1rem;
+  font-family: var(--popins);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+button.primaryBtn:hover {
+  background-color: var(--background-color);
+  color: white !important;
+}
+
+img.solana {
+  display: none;
+  width: 11rem;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav > a {
+    margin: 0.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  img.solana {
+    display: block;
+  }
+  .navbar-nav > a {
+    font-size: 18px;
+  }
+  button.primaryBtn {
+    font-size: 18px;
+  }
+
+  button.primaryBtn {
+    margin-left: 1.5rem;
+  }
+  img.logo.img-fluid {
+    width: 270px;
+  }
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,64,1, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.1rem !important;
+}

@@ -1,3 +1,44 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap&family=Alatsi&display=swap");
+
+:root {
+  --text-color: #ffffff;
+  --text-color-secondary: #000000;
+
+  --primary-color: #ff4001;
+  --background-color: #ff1616;
+  --optional-color: #ffe57b;
+
+  --popins: "Poppins", sans-serif;
+  --montseerat: "Montserrat", sans-serif;
+  --oswald: "Oswald", sans-serif;
+  --alatsi: "Alatsi", sans-serif;
+
+  --box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  --box-shadow2: 2px 2px 6px 2px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: auto;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  counter-reset: section;
+}
+
+.loadingSpiner {
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--optional-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }

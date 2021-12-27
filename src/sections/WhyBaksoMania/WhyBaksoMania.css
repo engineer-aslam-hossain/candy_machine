@@ -1,0 +1,51 @@
+section.why_bakso_mania {
+  padding: 4rem 0;
+  padding-bottom: 6rem;
+  background-color: var(--optional-color);
+  position: relative;
+}
+
+.why_card {
+  background-color: var(--primary-color);
+  border-radius: 46px;
+  padding: 2rem;
+}
+
+.why_card h5 {
+  color: var(--optional-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--montseerat);
+}
+
+.why_card p {
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: justify;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.why_card p span {
+  font-weight: 700;
+}
+
+.why_card p.first_p {
+  margin-bottom: 2rem;
+}
+img.baksoBg {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  img.baksoBg {
+    position: absolute;
+    bottom: 3rem;
+    left: -10rem;
+    display: block;
+  }
+  .why_card p {
+    font-size: 1.2rem;
+  }
+}
